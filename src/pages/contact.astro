@@ -1,0 +1,87 @@
+---
+title: "Services"
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <Header />
+    <main class="relative flex-auto min-w-0 flex flex-col min-h-screen px-2 md:px-0 justify-between">
+        <div class="relative bg-[url('/construction.jpg')] bg-cover bg-center h-[95vh]">
+			<div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+			<div class="relative z-10 flex flex-col items-left ml-40 mr-40 justify-center h-full">
+				<h1 class="text-left text-white text-6xl font-bold max-w-sm">
+					CONTACT US
+				</h1>
+				<p class="text-left text-white text-xl max-w-2xl font-semibold mt-7">
+                    Our team combines expert craftsmanship with the highest quality materials to deliver tailored solutions for both residential and commercial properties.
+				</p>
+				<a href="/projects/" 
+					class="text-center text-white text-2xl font-bold max-w-72 mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out">
+				VIEW OUR WORK ➜
+				</a>
+			</div>
+	  	</div>
+
+        <div class="bg-gray-100">
+            <div class="flex flex-row items-center justify-between mx-40 my-20 space-x-20">
+                <div class="flex flex-col text-left max-w-xl">
+                    <h1 class="text-lg font-medium text-sky-600 mb-7">
+                        WHAT WE DO
+                    </h1>
+                    <h1 class="text-5xl font-bold">
+                        No more leaking ever. High quality work that will last.
+                    </h1>
+                    <p class="text-gray-700 text-xl font-md mt-7">
+                        When you need high quality work at competitive prices, we have it covered.
+                        Alpha MM Inc. specializes in safeguarding decks, balconies, patios, stairways, and walkways from the elements, ensuring lasting durability and aesthetic appeal.
+                        We use a high quality fiberglass waterproofing system with non-skid and non-slip finishes. No more leaking, 10 years guaranteed.
+                    </p>
+                    <div class="mt-14 self-start">
+                        <a href="/contact/" 
+                        class="text-center text-sky-600 text-2xl font-bold inline-block px-6 py-3 border-2 border-sky-600 bg-white rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                            GET A FREE ESTIMATE ➜
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col text-left">
+                    <div class="font-bold text-sky-600 text-2xl mb-5">
+                        DECKS. STAIRS. BALCONIES. PATIOS. COURTYARDS. WALKWAYS. METAL RAILINGS.
+                    </div>
+                    <div class="inline-block px-5 py-5 border-2 border-sky-600 bg-white rounded-md shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        <h1 class="text-2xl font-bold">
+                            Waterproofing New Construction
+                        </h1>
+                        <p class="text-lg font-md mt-3">
+                            Waterproofed with our fiberglass waterproofing system. 
+                            Choose one of our finishes, or use your own alternative finish.
+                        </p>
+                    </div>
+
+                    <div class="mt-5 inline-block px-5 py-5 border-2 border-sky-600 bg-white rounded-md shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        <h1 class="text-2xl font-bold">
+                            Repair & Reseal Existing Construction
+                        </h1>
+                        <p class="text-lg font-md mt-3">
+                            Repair leaking surfaces, replace rotten wood and rusted railing posts, and reseal with our fiberglass waterproofing system.
+                        </p>
+                    </div>
+
+                    <div class="mt-5 inline-block px-5 py-5 border-2 border-sky-600 bg-white rounded-md shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        <h1 class="text-2xl font-bold">
+                            Stairs & Pre-Cast Steps
+                        </h1>
+                        <p class="text-lg font-md mt-3">
+                            We repair and reseal stairways, and can install and replace damaged pre-cast steps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <Footer />
+    </main>
+</Layout>
