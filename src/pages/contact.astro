@@ -26,39 +26,111 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
 
-        <section class="bg-gray-100 p-8 mt-10">
-            <h1 class="text-3xl font-bold text-center mb-8">
-                Get In Touch
+        <section class="bg-gray-100 p-20">
+            <h1 class="text-4xl font-bold text-center mb-5">
+                Get a Free Estimate. Contact Us.
             </h1>
-            <form id="contactForm" class="max-w-lg mx-auto">
-                <div class="mb-4">
-                    <label for="name" class="block text-lg font-semibold">
-                        Name:
-                    </label>
-                    <input type="text" id="name" name="name" class="w-full p-3 mt-2 border border-gray-300 rounded" required>
+
+            <div class="flex flex-row justify-between gap-10">
+                <div class="flex flex-col justify-between">
+                    <div class="inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        <h1 class="text-2xl font-bold">
+                            Waterproofing New Construction
+                        </h1>
+                        <p class="text-lg font-md mt-3">
+                            Waterproofed with our fiberglass waterproofing system. 
+                            Choose one of our finishes, or use your own alternative finish.
+                        </p>
+                    </div>
+
+                    <div class="inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        <h1 class="text-2xl font-bold">
+                            Waterproofing New Construction
+                        </h1>
+                        <p class="text-lg font-md mt-3">
+                            Waterproofed with our fiberglass waterproofing system. 
+                            Choose one of our finishes, or use your own alternative finish.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="mb-4">
-                    <label for="email" class="block text-lg font-semibold">
-                        Return Email:
-                    </label>
-                    <input type="email" id="email" name="email" class="w-full p-3 mt-2 border border-gray-300 rounded" required>
-                </div>
+                <div class="bg-white py-10">
+                    <h1 class="text-3xl font-semibold mx-14 mb-5">
+                        If You Prefer A Form.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-5 mx-14">
+                        Fill out this form to automatically generate an email using your device's default email service.
+                    </p>
 
-                <div class="mb-4">
-                    <label for="phone" class="block text-lg font-semibold">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" class="w-full p-3 mt-2 border border-gray-300 rounded" required>
-                </div>
+                    <form id="contactForm" class="max-w-lg mx-auto">
+                        <div class="flex flex-row justify-between gap-4 mb-4">
+                            <div class="flex flex-col flex-1">
+                                <label for="firstName" class="block text-lg font-semibold">
+                                    First Name
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="firstName" name="firstName" 
+                                       class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                       placeholder="First Name" required>
+                            </div>
 
-                <div class="mb-4">
-                    <label for="message" class="block text-lg font-semibold">Message:</label>
-                    <textarea id="message" name="message" rows="4" class="w-full p-3 mt-2 border border-gray-300 rounded" required></textarea>
-                </div>
+                            <div class="flex flex-col flex-1">
+                                <label for="lastName" class="block text-lg font-semibold">
+                                    Last Name
+                                    <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="lastName" name="lastName" 
+                                       class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                       placeholder="Last Name" required>
+                            </div>
+                        </div>
 
-                <div class="text-center">
-                    <input type="submit" value="Send Message" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg cursor-pointer hover:bg-blue-600 transition duration-300 ease-in-out">
+                        <div class="mb-4">
+                            <label for="email" class="block text-lg font-semibold">
+                                Email
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                   placeholder="Email" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="phone" class="block text-lg font-semibold">
+                                Phone
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <input type="tel" id="phone" name="phone" 
+                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                   placeholder="Phone" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="subject" class="block text-lg font-semibold">
+                                Subject
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="subject" name="subject" 
+                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                   placeholder="Subject" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="block text-lg font-semibold">
+                                Tell Us About Your Project
+                                <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
+                                      placeholder="Project Details" required></textarea>
+                        </div>
+
+                        <div class="text-left">
+                            <input type="submit" value="Submit" class="px-6 py-3 bg-sky-500 text-white text-lg font-semibold cursor-pointer hover:bg-sky-600 transition duration-300 ease-in-out">
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </section>
 
         <script>
@@ -71,25 +143,32 @@ import Layout from "../layouts/Layout.astro";
                     {
                         event.preventDefault();
         
-                        const nameElement = document.getElementById('name') as HTMLInputElement;
+                        const firstNameElement = document.getElementById('firstName') as HTMLInputElement;
+                        const lastNameElement = document.getElementById('lastName') as HTMLTextAreaElement;
                         const emailElement = document.getElementById('email') as HTMLInputElement;
                         const phoneElement = document.getElementById('phone') as HTMLInputElement;
+                        const subjectElement = document.getElementById('subject') as HTMLTextAreaElement;
                         const messageElement = document.getElementById('message') as HTMLTextAreaElement;
         
-                        if (nameElement && emailElement && messageElement) 
+                        if (firstNameElement && lastNameElement && emailElement && 
+                            phoneElement && subjectElement && messageElement) 
                         {
-                            var name = encodeURIComponent(nameElement.value);
+                            var firstName = encodeURIComponent(firstNameElement.value);
+                            var lastName = encodeURIComponent(lastNameElement.value);
                             var email = encodeURIComponent(emailElement.value);
-                            var phone = encodeURIComponent(phoneElement ? phoneElement.value : '');
+                            var phone = encodeURIComponent(phoneElement.value);
+                            var projectSubject = encodeURIComponent(subjectElement.value);
                             var message = encodeURIComponent(messageElement.value);
         
-                            var subject = "Contact Form Submission: " + name;
-                            var body = "Name: " + name + "%0A" +
+                            var emailSubject = firstName + " " + lastName + ": " + projectSubject ;
+                            var body = "Contact Form Submission" + "%0A%0A" +
+                                       "Name: " + firstName + " " + lastName + "%0A" +
                                        "Email: " + email + "%0A" +
                                        "Phone: " + phone + "%0A%0A" +
+                                       "Subject: " + projectSubject + "%0A" +
                                        "Message: " + "%0A" + message;
         
-                            var mailtoLink = "mailto:mimarinov@yahoo.com?subject=" + subject + "&body=" + body;
+                            var mailtoLink = "mailto:mimarinov@yahoo.com?subject=" + emailSubject + "&body=" + body;
         
                             window.location.href = mailtoLink;
                         } 
