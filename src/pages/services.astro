@@ -1,0 +1,59 @@
+---
+title: "Services"
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <Header />
+    <main class="relative flex-auto min-w-0 flex flex-col min-h-screen px-2 md:px-0 justify-between">
+        <div class="relative bg-[url('/construction.jpg')] bg-cover bg-center h-[95vh]">
+			<div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+			<div class="relative z-10 flex flex-col items-left ml-40 mr-40 justify-center h-full">
+				<h1 class="text-left text-white text-6xl font-bold max-w-sm">
+					OUR SERVICES
+				</h1>
+				<p class="text-left text-white text-xl max-w-2xl font-semibold mt-7">
+                    Our team combines expert craftsmanship with the highest quality materials to deliver tailored solutions for both residential and commercial properties.
+				</p>
+				<a href="/gallery/" 
+					class="text-left text-white text-2xl font-bold max-w-72 mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out">
+				VIEW OUR WORK ➜
+				</a>
+			</div>
+	  	</div>
+
+        <div class="bg-gray-100">
+            <div class="flex flex-col text-left my-28 mx-40">
+                <h1 class="text-lg font-medium text-sky-600 mb-7">
+                    WHAT WE DO
+                </h1>
+                <h1 class="text-5xl font-bold">
+                    High quality work at competetive prices.
+                </h1>
+                <p class="text-gray-700 text-xl max-w-max font-md mt-7">
+                    Alpha MM Inc is a trusted leader in waterproofing and surface protection services, proudly serving Los Angeles and surrounding areas for over 20 years. We specialize in safeguarding decks, balconies, patios, stairways, and walkways from the elements, ensuring lasting durability and aesthetic appeal.
+                </p>
+                <p class="text-gray-700 text-xl max-w-max font-md mt-5">
+                    With a commitment to excellence, our team combines expert craftsmanship with the highest quality materials to deliver tailored solutions for both residential and commercial properties. From new construction to repairing existing structures, we offer a range of services, including surface repair, waterproof coatings, surface finishes, and resealing, all designed to extend the life of your investment.
+                </p>
+                <p class="text-gray-700 text-xl max-w-max font-md mt-5">
+                    At Alpha MM Inc, customer satisfaction is our top priority. Our dedication to quality, reliability, and competitive pricing has earned us a reputation as one of the top contractors for waterproofing needs in Southern California. Whether you’re looking to protect a new project or repair a leaky surface, we are here to help you every step of the way.
+                </p>
+                <p class="text-gray-700 text-xl max-w-max font-md mt-5">
+                    Choose Alpha MM Inc for your next waterproofing project, and experience the lasting quality and customer service that comes from our highly experienced team.
+                </p>
+                <div class="mt-14 self-start">
+                    <a href="/contact/" 
+                       class="text-sky-600 text-2xl font-bold max-w-80 inline-block px-6 py-3 border-2 border-sky-600 bg-white rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+                        CONTACT US TODAY ➜
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <Footer />
+    </main>
+</Layout>
