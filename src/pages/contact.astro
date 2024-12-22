@@ -4,187 +4,227 @@ title: "Services"
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
+
+const title = "Contact Us | Alpha MM Inc";
+const description = 
+  "Get in touch with Alpha MM Inc for a free estimate on deck waterproofing, balcony repairs, and more in Los Angeles.";
+const url = "https://www.alphamminc.com/contact/";
+const image = "/alpha-logo.png";
 ---
 
-<Layout>
-    <Header />
-    <main class="relative flex-auto min-w-0 flex flex-col min-h-screen px-2 md:px-0 justify-between">
-        <div class="relative bg-[url('/calendar.jpg')] bg-cover bg-center h-[95vh]">
-            <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
-            <div class="relative z-10 flex flex-col items-left ml-40 mr-40 justify-center h-full">
-                <h1 class="text-left text-white text-6xl font-bold max-w-sm">
-                    CONTACT US
-                </h1>
-                <p class="text-left text-white text-xl max-w-2xl font-semibold mt-7">
-                    Alpha MM Inc is ready to answer your questions and help your project get started with a free estimate. 
-                    With over 20 years in the Los Angeles area, we specialize in delivering expert waterproofing solutions.
-                </p>
-                <a href="/projects/" 
-                    class="text-center text-white text-2xl font-bold max-w-72 mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out">
-                    VIEW OUR WORK ➜
-                </a>
-            </div>
+<Layout {title} {description} {url} {image}>
+  <Header />
+
+  <main class="relative flex-auto min-w-0 flex flex-col min-h-screen pt-0 justify-between">
+
+    <div class="relative bg-[url('/calendar.jpg')] bg-cover bg-center h-[100vh]">
+      <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+      <div class="relative z-10 flex flex-col justify-center h-full mx-4 md:mx-40">
+        <h1 class="text-left text-white font-bold max-w-sm text-4xl md:text-6xl">
+          CONTACT US
+        </h1>
+        <p class="text-left text-white text-base md:text-xl font-semibold mt-5 md:mt-7 max-w-2xl">
+          Alpha MM Inc is ready to answer your questions and help your project get started with a free estimate. 
+          With over 20 years in the Los Angeles area, we specialize in delivering expert waterproofing solutions.
+        </p>
+        <a
+          href="/projects/"
+          class="text-center text-white text-lg md:text-2xl font-bold mt-5 md:mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out max-w-xs"
+        >
+          VIEW OUR WORK ➜
+        </a>
+      </div>
+    </div>
+
+    <section class="bg-gray-100">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mt-10 md:mt-20 mb-10 md:mb-14">
+        Get A Free Estimate
+      </h1>
+
+      <div class="flex flex-col md:flex-row justify-center gap-10 mx-4 md:mx-40 mb-10 md:mb-20">
+
+        <div class="flex-1 flex items-center justify-center">
+          <div class="text-center w-full max-w-sm p-8 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+            <h1 class="text-4xl font-semibold mb-5">📧📨</h1>
+            <h1 class="text-2xl md:text-3xl font-semibold">Email Us</h1>
+            <p class="text-lg md:text-xl font-md mt-5">mimarinov@yahoo.com</p>
+          </div>
         </div>
 
-        <section class="bg-gray-100 p-20">
-            <h1 class="text-4xl font-bold text-center mb-5">
-                Get a Free Estimate. Contact Us.
-            </h1>
+        <div class="flex-1 flex items-center justify-center">
+          <div class="text-center w-full max-w-sm p-8 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+            <h1 class="text-4xl font-semibold mb-5">📱📞</h1>
+            <h1 class="text-2xl md:text-3xl font-semibold">Call Us</h1>
+            <p class="text-lg md:text-xl font-md mt-5">(818) 517-5056</p>
+          </div>
+        </div>
 
-            <div class="flex flex-row justify-between gap-10">
-                <div class="flex flex-col justify-between">
-                    <div class="inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-                        <h1 class="text-2xl font-bold">
-                            Waterproofing New Construction
-                        </h1>
-                        <p class="text-lg font-md mt-3">
-                            Waterproofed with our fiberglass waterproofing system. 
-                            Choose one of our finishes, or use your own alternative finish.
-                        </p>
-                    </div>
+        <div class="flex-1 flex items-center justify-center">
+          <div class="text-center w-full max-w-sm p-8 bg-sky-700 text-white shadow-xl">
+            <h1 class="text-4xl font-semibold mb-5">📅</h1>
+            <h1 class="text-2xl md:text-3xl font-semibold">Contact Us Today</h1>
+            <p class="text-lg md:text-xl font-md mt-5">Schedule an estimate, for free.</p>
+          </div>
+        </div>
+      </div>
 
-                    <div class="inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-                        <h1 class="text-2xl font-bold">
-                            Waterproofing New Construction
-                        </h1>
-                        <p class="text-lg font-md mt-3">
-                            Waterproofed with our fiberglass waterproofing system. 
-                            Choose one of our finishes, or use your own alternative finish.
-                        </p>
-                    </div>
-                </div>
+      <div class="bg-white shadow-xl py-10 mx-4 md:mx-40 mb-10 md:mb-20">
+        <h1 class="text-2xl md:text-3xl text-center font-semibold mb-5 mx-4 md:mx-14">
+          If You Prefer A Form
+        </h1>
+        <p class="text-base md:text-xl text-center text-gray-600 mb-10 mx-4 md:mx-14">
+          Fill out this form to automatically generate an email using your device's default email service.
+        </p>
 
-                <div class="bg-white py-10">
-                    <h1 class="text-3xl font-semibold mx-14 mb-5">
-                        If You Prefer A Form.
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-5 mx-14">
-                        Fill out this form to automatically generate an email using your device's default email service.
-                    </p>
+        <form id="contactForm" class="mx-4 md:mx-14">
 
-                    <form id="contactForm" class="max-w-lg mx-auto">
-                        <div class="flex flex-row justify-between gap-4 mb-4">
-                            <div class="flex flex-col flex-1">
-                                <label for="firstName" class="block text-lg font-semibold">
-                                    First Name
-                                    <span class="text-red-500">*</span>
-                                </label>
-                                <input type="text" id="firstName" name="firstName" 
-                                       class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                       placeholder="First Name" required>
-                            </div>
-
-                            <div class="flex flex-col flex-1">
-                                <label for="lastName" class="block text-lg font-semibold">
-                                    Last Name
-                                    <span class="text-red-500">*</span>
-                                </label>
-                                <input type="text" id="lastName" name="lastName" 
-                                       class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                       placeholder="Last Name" required>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="email" class="block text-lg font-semibold">
-                                Email
-                                <span class="text-red-500">*</span>
-                            </label>
-                            <input type="email" id="email" name="email" 
-                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                   placeholder="Email" required>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="phone" class="block text-lg font-semibold">
-                                Phone
-                                <span class="text-red-500">*</span>
-                            </label>
-                            <input type="tel" id="phone" name="phone" 
-                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                   placeholder="Phone" required>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="subject" class="block text-lg font-semibold">
-                                Subject
-                                <span class="text-red-500">*</span>
-                            </label>
-                            <input type="text" id="subject" name="subject" 
-                                   class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                   placeholder="Subject" required>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="message" class="block text-lg font-semibold">
-                                Tell Us About Your Project
-                                <span class="text-red-500">*</span>
-                            </label>
-                            <textarea id="message" name="message" rows="4" 
-                                      class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2" 
-                                      placeholder="Project Details" required></textarea>
-                        </div>
-
-                        <div class="text-left">
-                            <input type="submit" value="Submit" class="px-6 py-3 bg-sky-500 text-white text-lg font-semibold cursor-pointer hover:bg-sky-600 transition duration-300 ease-in-out">
-                        </div>
-                    </form>
-                </div>
+          <div class="flex flex-col md:flex-row md:justify-between gap-4 mb-4">
+            <div class="flex flex-col flex-1">
+              <label for="firstName" class="block text-base md:text-lg font-semibold">
+                First Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+                placeholder="First Name"
+                required
+              />
             </div>
-        </section>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() 
-            {
-                const contactForm = document.getElementById('contactForm');
-                if (contactForm) 
-                {
-                    contactForm.addEventListener('submit', function(event) 
-                    {
-                        event.preventDefault();
-        
-                        const firstNameElement = document.getElementById('firstName') as HTMLInputElement;
-                        const lastNameElement = document.getElementById('lastName') as HTMLTextAreaElement;
-                        const emailElement = document.getElementById('email') as HTMLInputElement;
-                        const phoneElement = document.getElementById('phone') as HTMLInputElement;
-                        const subjectElement = document.getElementById('subject') as HTMLTextAreaElement;
-                        const messageElement = document.getElementById('message') as HTMLTextAreaElement;
-        
-                        if (firstNameElement && lastNameElement && emailElement && 
-                            phoneElement && subjectElement && messageElement) 
-                        {
-                            var firstName = encodeURIComponent(firstNameElement.value);
-                            var lastName = encodeURIComponent(lastNameElement.value);
-                            var email = encodeURIComponent(emailElement.value);
-                            var phone = encodeURIComponent(phoneElement.value);
-                            var projectSubject = encodeURIComponent(subjectElement.value);
-                            var message = encodeURIComponent(messageElement.value);
-        
-                            var emailSubject = firstName + " " + lastName + ": " + projectSubject ;
-                            var body = "Contact Form Submission" + "%0A%0A" +
-                                       "Name: " + firstName + " " + lastName + "%0A" +
-                                       "Email: " + email + "%0A" +
-                                       "Phone: " + phone + "%0A%0A" +
-                                       "Subject: " + projectSubject + "%0A" +
-                                       "Message: " + "%0A" + message;
-        
-                            var mailtoLink = "mailto:mimarinov@yahoo.com?subject=" + emailSubject + "&body=" + body;
-        
-                            window.location.href = mailtoLink;
-                        } 
-                        else 
-                        {
-                            console.error('Form elements are missing!');
-                        }
-                    });
-                }
-                else 
-                {
-                    console.error('Form element not found!');
-                }
-            });
-        </script>                
+            <div class="flex flex-col flex-1">
+              <label for="lastName" class="block text-base md:text-lg font-semibold">
+                Last Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
 
-        <Footer />
-    </main>   
+          <div class="mb-4">
+            <label for="email" class="block text-base md:text-lg font-semibold">
+              Email <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="phone" class="block text-base md:text-lg font-semibold">
+              Phone <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+              placeholder="Phone"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="subject" class="block text-base md:text-lg font-semibold">
+              Subject <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+              placeholder="Subject"
+              required
+            />
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="block text-base md:text-lg font-semibold">
+              Tell Us About Your Project <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full p-3 mt-2 bg-zinc-100 focus:outline-none focus:border-sky-600 focus:border-2"
+              placeholder="Project Details"
+              required
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <input
+              type="submit"
+              value="Submit"
+              class="px-6 py-3 bg-sky-500 text-white text-lg md:text-xl font-semibold cursor-pointer hover:bg-sky-700 transition duration-300 ease-in-out"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script is:raw>
+      document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const firstNameElement = document.getElementById('firstName');
+            const lastNameElement = document.getElementById('lastName');
+            const emailElement = document.getElementById('email');
+            const phoneElement = document.getElementById('phone');
+            const subjectElement = document.getElementById('subject');
+            const messageElement = document.getElementById('message');
+
+            if (
+              firstNameElement &&
+              lastNameElement &&
+              emailElement &&
+              phoneElement &&
+              subjectElement &&
+              messageElement
+            ) {
+              const firstName = encodeURIComponent(firstNameElement.value);
+              const lastName = encodeURIComponent(lastNameElement.value);
+              const email = encodeURIComponent(emailElement.value);
+              const phone = encodeURIComponent(phoneElement.value);
+              const projectSubject = encodeURIComponent(subjectElement.value);
+              const projectMessage = encodeURIComponent(messageElement.value);
+
+              const emailSubject = firstName + " " + lastName + ": " + projectSubject;
+              const body =
+                "Contact Form Submission" + "%0A%0A" +
+                "Name: " + firstName + " " + lastName + "%0A" +
+                "Email: " + email + "%0A" +
+                "Phone: " + phone + "%0A%0A" +
+                "Subject: " + projectSubject + "%0A" +
+                "Message: " + "%0A" + projectMessage;
+
+              const mailtoLink = "mailto:mimarinov@yahoo.com?subject=" + emailSubject + "&body=" + body;
+              window.location.href = mailtoLink;
+            } else {
+              console.error('Form elements are missing!');
+            }
+          });
+        } else {
+          console.error('Form element not found!');
+        }
+      });
+    </script>
+
+    <Footer />
+  </main>
 </Layout>

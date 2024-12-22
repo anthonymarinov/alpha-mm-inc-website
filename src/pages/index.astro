@@ -4,104 +4,124 @@ title: "Home"
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
+
+const title = "Home | Alpha MM Inc";
+const description = 
+  "Welcome to Alpha MM Inc. We are a leading decking contracting company specializing in waterproofing solutions in Los Angeles, California.";
+const url = "https://www.alphamminc.com/";
+const image = "/alpha-logo.png";
 ---
 
-<Layout>
-	<Header />
+<Layout {title} {description} {url} {image}>
+  <Header />
   
-	<main class="relative flex-auto min-w-0 flex flex-col min-h-screen px-2 md:px-0 justify-between">
-	  
-	  	<div class="relative bg-[url('/building1.jpg')] bg-cover bg-center h-[95vh]">
-			<div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
-			<div class="relative z-10 flex flex-col items-left ml-40 mr-40 justify-center h-full">
-				<h1 class="text-left text-white text-6xl font-bold max-w-sm">
-					DECKS. STAIRS. BALCONIES. PATIOS.
-				</h1>
-				<p class="text-left text-white text-xl max-w-2xl font-semibold mt-7">
-					Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.
-				</p>
-				<a href="/projects/" 
-					class="text-center text-white text-2xl font-bold max-w-72 mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out">
-				VIEW OUR WORK ➜
-				</a>
-			</div>
-	  	</div>
+  <main class="relative flex-auto min-w-0 flex flex-col min-h-screen pt-0 justify-between">
+    
+    <div class="relative bg-[url('/building1.jpg')] bg-cover bg-center h-[100vh]">
 
-	  	<div class="bg-gray-100">
-			<div class="mt-20 mb-20 flex flex-row justify-between items-center ml-40 mr-40">
-				<div class="flex flex-col inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-					<h1 class="font-bold text-4xl text-center mb-5">
-						🏗️
-					</h1>
-					<h1 class="text-center font-bold text-4xl">
-						New Construction
-					</h1>
-					<p class="mt-5 text-lg">
-						We waterproof new construction! We can provide a finished surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.
-					</p>
-				</div>
-				<div class="flex flex-col mx-5 inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-					<h1 class="=font-bold text-4xl text-center mb-5">
-						🛠️
-					</h1>
-					<h1 class=" text-center font-bold text-4xl">
-					Existing Construction
-					</h1>
-					<p class="mt-5 text-lg">
-						We repair existing construction! We diagnose, repair, replace, and reseal failing or leaking surfaces. We can finish the surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.
-					</p>
-				</div>
-				<div class="flex flex-col inline-block px-5 py-5 border-2 border-sky-600 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-					<h1 class="font-bold text-4xl text-center mb-5">
-						📞
-					</h1>
-					<h1 class="text-center font-bold text-4xl">
-					Free Estimates
-					</h1>
-					<p class="mt-5 text-lg">
-						We provide free estimates for your projects! Choose Alpha MM Inc for your waterproofing needs! Contact us today!
-					</p>
-				</div>
-			</div>
-	  	</div>
+      <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
 
-	  	<div class="relative bg-[url('/los-angeles.jpg')] bg-cover bg-center h-[95vh]">
-			<div class="absolute inset-0 bg-black bg-opacity-20 z-0"></div>
-			<div class="relative z-10 flex flex-col items-left ml-40 mr-40 justify-center h-full">
-				<h1 class="text-left text-white text-7xl font-bold max-w-sm">
-					Providing Excellence For Over 20 Years.
-				</h1>
-				<a href="/about/" 
-					class="text-center text-white text-2xl font-bold max-w-72 mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out">
-				READ ABOUT US ➜
-				</a>
-			</div>
-		</div>
+      <div class="relative z-10 flex flex-col justify-center h-full mx-4 md:mx-40">
+        <h1 class="text-left text-white font-bold max-w-sm text-4xl md:text-6xl">
+          DECKS. STAIRS. BALCONIES. PATIOS.
+        </h1>
+        <p class="text-left text-white text-base md:text-xl font-semibold mt-5 md:mt-7 max-w-2xl">
+          Alpha MM Inc is a leading decking contracting company based in Los Angeles, California, specializing in protecting decks, balconies, patios, stairways, and walkways from water.
+        </p>
+        <a 
+          href="/projects/"
+          class="text-center text-white text-lg md:text-2xl font-bold mt-7 md:mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out max-w-xs"
+        >
+          VIEW OUR WORK ➜
+        </a>
+      </div>
+    </div>
 
-		<div class="bg-gray-100">
-			<div class="flex flex-row mx-40 my-20 space-x-20 justify-between">
-				<div class="flex flex-col">
-					<img src="/business-card.jpg" class="shadow-xl">
-				</div>
-		
-				<div class="flex flex-col text-right">
-					<h1 class="text-5xl font-bold">
-						The Business Card That Started It All.
-					</h1>
-					<p class="text-right text-black text-xl max-w-2xl font-semibold mt-7">
-						Have a new project that needs waterproofing? Have a leaky or damaged walking surface? We've got you covered. We provide the highest quality service with competitive pricing.
-					</p>
-					<div class="mt-10 self-end">
-						<a href="/contact/" 
-						   class="text-center text-sky-600 text-2xl font-bold max-w-80 inline-block px-6 py-3 border-2 border-sky-600 bg-white rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
-							CONTACT US TODAY ➜
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>		
-  
-	  <Footer />
-	</main>
-  </Layout>
-  
+
+    <div class="bg-gray-100">
+
+      <div class="mt-10 md:mt-20 mb-10 md:mb-20 flex flex-col md:flex-row items-center justify-between mx-4 md:mx-40 gap-10">
+
+        <div class="flex flex-col px-5 py-5 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+          <h1 class="font-bold text-4xl text-center mb-5">
+            🏗️
+          </h1>
+          <h1 class="text-center font-bold text-2xl md:text-4xl">
+            New Construction
+          </h1>
+          <p class="mt-5 text-base md:text-lg">
+            We waterproof new construction! We can provide a finished surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.
+          </p>
+        </div>
+
+        <div class="flex flex-col px-5 py-5 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+          <h1 class="font-bold text-4xl text-center mb-5">
+            🛠️
+          </h1>
+          <h1 class="text-center font-bold text-2xl md:text-4xl">
+            Existing Construction
+          </h1>
+          <p class="mt-5 text-base md:text-lg">
+            We repair existing construction! We diagnose, repair, replace, and reseal failing or leaking surfaces. We can finish the surface using one of our surface coatings and paint finishes, or leave the surface unfinished for later/other surface finishes, such as tile.
+          </p>
+        </div>
+
+        <div class="flex flex-col px-5 py-5 bg-white shadow-xl hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out">
+          <h1 class="font-bold text-4xl text-center mb-5">
+            📞
+          </h1>
+          <h1 class="text-center font-bold text-2xl md:text-4xl">
+            Free Estimates
+          </h1>
+          <p class="mt-5 text-base md:text-lg">
+            We provide free estimates for your projects! Choose Alpha MM Inc for your waterproofing needs! Contact us today!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative bg-[url('/los-angeles.jpg')] bg-cover bg-center h-[95vh]">
+      <div class="absolute inset-0 bg-black bg-opacity-20 z-0"></div>
+      <div class="relative z-10 flex flex-col justify-center h-full mx-4 md:mx-40">
+        <h1 class="text-left text-white font-bold max-w-sm text-4xl md:text-7xl">
+          Providing Excellence For Over 20 Years.
+        </h1>
+        <a 
+          href="/about/"
+          class="text-center text-white text-lg md:text-2xl font-bold mt-7 md:mt-10 inline-block px-6 py-3 border-2 border-white rounded-lg cursor-pointer hover:bg-white hover:text-black transition duration-300 ease-in-out max-w-xs"
+        >
+          READ ABOUT US ➜
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-gray-100">
+
+      <div class="flex flex-col md:flex-row md:space-x-20 mx-4 md:mx-40 my-10 md:my-20 space-y-10 md:space-y-0 items-center md:items-start">
+
+        <div class="flex-1">
+          <img src="/business-card.jpg" class="shadow-xl w-full md:w-auto" alt="Business Card">
+        </div>
+
+        <div class="flex-1 flex flex-col text-left md:text-right">
+          <h1 class="text-3xl md:text-5xl font-bold">
+            The Business Card That Started It All.
+          </h1>
+          <p class="text-black text-base md:text-xl font-semibold mt-5 md:mt-7">
+            Have a new project that needs waterproofing? Have a leaky or damaged walking surface? We've got you covered. We provide the highest quality service with competitive pricing.
+          </p>
+          <div class="mt-5 md:mt-10 self-start md:self-end">
+            <a
+              href="/contact/"
+              class="text-center text-sky-600 text-lg md:text-2xl font-bold inline-block px-6 py-3 border-2 border-sky-600 bg-white rounded-lg cursor-pointer hover:bg-sky-600 hover:text-white transition duration-300 ease-in-out"
+            >
+              CONTACT US TODAY ➜
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </main>
+</Layout>
