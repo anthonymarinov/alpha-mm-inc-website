@@ -7,4 +7,5 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: "https://www.alphamminc.com",
   integrations: [tailwind()],
+  devToolbar: { enabled: false },
 });
